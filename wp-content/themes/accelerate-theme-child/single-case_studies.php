@@ -13,34 +13,35 @@ get_header(); ?>
 	<div id="content" role="main">
 
 			<?php while ( have_posts() ) : the_post();
+				$size = "full";
 				$services = get_field('services');
 				$client = get_field('client');
 				$link = get_field('site_link');
-				$image_1 = get_field('imgage_1');
+				$image_1 = get_field('image_1');
 				$image_2 = get_field('image_2');
 				$image_3 = get_field('image_3'); ?>
 
 		<article-class="case-study">
 			<aside class="case-study-sidebar">
-				<h2><? php the_title(); ?></h2>
-				<h5><? php echo $services; ?></h5>
-				<h5>Client: <? php echo $client; ?></h5>
-				<h6>Visit Live Site <? php echo $site_link; ?></h6>
+				<h2><?php the_title(); ?></h2>
+				<h5><?php echo $services; ?></h5>
+				<h5>Client: <?php echo $client; ?></h5>
+				<h6>Visit Live Site <?php echo $site_link; ?></h6>
 			<?php the_content(); ?>
-				<p><a href="<? php echo $link; ?>">Site Link</a></p>
+				<p><a href="<?php echo $link; ?>">Site Link</a></p>
 			</aside>
 
  		<div class="case-study-images">
-			<? php if($image_1){?>
-				<img src= "<? php echo $image_1; ?>"/>
+			<?php if($image_1){?>
+			<?php echo wp_get_attachment_image( $image_1, $size ); ?>
 		<?php	} ?>
 
-			<? php if($image_2){?>
-				<img src= "<? php echo $image_2; ?>"/>
-		<? php	} ?>
+			<?php if($image_2){?>
+				<?php echo wp_get_attachment_image( $image_2, $size ); ?>
+		<?php	} ?>
 
-			<? php if($image_3){?>
-				<img src= "<? php echo $image_3; ?>"/>
+			<?php if($image_3){?>
+				<?php echo wp_get_attachment_image( $image_3, $size ); ?>
 		<?php	} ?>
 
 		</div>
