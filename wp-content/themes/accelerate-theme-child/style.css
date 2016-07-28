@@ -31,10 +31,6 @@
 }
 
 .nav-menu {
-  margin: 0;
-}
-
-.nav-menu ul li {
   float: left;
   margin: 0 30px;
   text-transform: uppercase;
@@ -74,17 +70,16 @@
 
 .featured-work {
   overflow: auto;
-}
-
-.featued-work h4 {
-  font-family:'Montserrat';
+  font-family: 'Montserrat';
   text-transform: uppercase;
   text-align: center;
-  margin: 0 0 40px;
+  margin: 0  0 40px;
 }
 
 .featured-work ul {
   margin: 0;
+  text-transform: none;
+
 }
 
 .individual-featured-work {
