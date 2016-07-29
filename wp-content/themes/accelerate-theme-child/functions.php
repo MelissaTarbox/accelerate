@@ -26,6 +26,16 @@
  */
 
  function create_custom_post_types() {
+
+   // Reverse Case Studies Archive order
+   function reverse_archive_order( $query ){
+
+   	if( !is_admin() && $query->is_post_type_archive('case_studies')  && $query->is_main_query() ) {
+   		$query->set('order', 'ASC');
+   	}
+   }
+
+   add_action( 'pre_get_posts', 'reverse_archive_order' );
     register_post_type( 'case_studies',
         array(
             'labels' => array(

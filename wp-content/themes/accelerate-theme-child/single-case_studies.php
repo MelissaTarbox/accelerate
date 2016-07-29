@@ -26,9 +26,8 @@ get_header(); ?>
 				<h2><?php the_title(); ?></h2>
 				<h5><?php echo $services; ?></h5>
 				<h5>Client: <?php echo $client; ?></h5>
-				<h6>Visit Live Site <?php echo $site_link; ?></h6>
 			<?php the_content(); ?>
-				<p><a href="<?php echo $link; ?>">Site Link</a></p>
+				<p><a href="<?php echo $link; ?>"><strong>Site Link &rsaquo;</strong></a></p>
 			</aside>
 
  		<div class="case-study-images">

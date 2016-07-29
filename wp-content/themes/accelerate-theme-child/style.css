@@ -30,9 +30,10 @@
   margin: 0;
 }
 
-.nav-menu {
+.nav-menu li {
   float: left;
-  text-transform: uppercase;
+  tex-transform: uppercase;
+  margin-right: 15px;
 }
 
 
@@ -110,14 +111,14 @@
 /* Case Studies */
 
 article.case-study{
-  margin: 40px 0 0;
+  margin-top: 40px;
 }
 
 
 aside.case-study-sidebar {
   float: left;
   width: 314px;
-  margin: 0 40px 0 0;
+  margin: 25px 40px 0 0;
 }
 
 aside.case-study-sidebar h5 {
@@ -128,6 +129,7 @@ aside.case-study-sidebar h5 {
 div.case-study-images {
   float: left;
   width: 606px;
+  margin-top: 40px;
 }
 
 div.case-study-images img {
