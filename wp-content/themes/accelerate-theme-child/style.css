@@ -33,7 +33,7 @@
 .nav-menu li {
   float: left;
   tex-transform: uppercase;
-  margin-right: 15px;
+  margin-right: 20px;
 }
 
 
@@ -103,7 +103,9 @@
 .social-media-menu li {
   float: left;
   margin: 0 5px;
+  font-size: 12px;
   list-style-type: none;
+
 }
 
 
