@@ -164,3 +164,95 @@ aside.case-study-sidebar h5 {
 aside.case-study-sidebar p {
   font-size: 16px;
 }
+
+/* Contact Us Page */
+
+/*entire form */
+#ninja_forms_form_1_wrap {
+  width: 600px;
+}
+
+/* h2 style */
+
+#ninja_forms_form_1_wrap, h2 {
+  margin-top: 50px;
+}
+
+/* paragraph style */
+
+#ninja_forms_form_1_wrap, p{
+width: 65%;
+font-weight: 200;
+font-size: 16px;
+margin-bottom: 35px;
+}
+
+/* input boxes */
+.ninja-forms-field {
+  border: 1px solid #bfbfbf;
+  font-size: 16px;
+}
+
+/* name label*/
+#ninja_forms_field_1_label{
+  font-size: 14px;
+  color: #808080;
+  min-width: 220px;
+  fornt-weight: 200;
+}
+
+/* email label*/
+#ninja_forms_field_2_label{
+  font-size: 14px;
+  color: #808080;
+  min-width: 220px;
+  fornt-weight: 200;
+}
+
+/* message label*/
+#ninja_forms_field_3_label{
+  font-size: 14px;
+  color: #808080;
+  min-width: 220px;
+  fornt-weight: 200;
+}
+
+/* name input */
+ #ninja_forms_field_1_div_wrap, #ninja_forms_field_1 {
+  width: 30%;
+  min-width: 285px;
+  height: 35px;
+  float: left;
+  clear: right;
+  margin-right: 53px;
+}
+
+/* email input */
+
+#ninja_forms_field_2{
+  width: 30%;
+  min-width: 285px;
+  height: 35px;
+  float: right;
+  clear: right;
+}
+
+/* button */
+
+#ninja_forms_field_4 {
+  background-color: #45ac9d;
+  color: #fff;
+  border: 1px solid #45ac9d;
+  width: 200px;
+  height: 50px;
+  float: right;
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 45px;
+}
+
+#ninja_forms_edit_action_3, h4 {
+  color: #45ac9d;
+  font-size: 20px;
+  font-weight: 400;
+}
