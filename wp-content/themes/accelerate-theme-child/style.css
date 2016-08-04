@@ -102,13 +102,45 @@
 
 .social-media-menu li {
   float: left;
-  margin: 0 5px;
-  font-size: 12px;
+  margin-right: 5px;
+  margin-left: 5px;
+  font-size: 10px;
   list-style-type: none;
 }
 
+.social-media-menu li a {
+  color: #fff;
+  background-color: #808080;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 20px;
+  vertical-align: middle;
+  padding: 8px;
+}
 
+/* About Page*/
+.page-about {
+  background: url("img/hero-image.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
+}
 
+.page-about h3 {
+  color: #fff;
+}
+.page-about h3 span {
+      color: #45ac9d;
+    }
+
+.page-about h5 {
+  text-transform: uppercase;
+  color:#2b2b2b;
+  text-align: center;
+}
+
+.page-about p {
+  color: #909090;
+}
 /* Case Studies */
 
 article.case-study{
