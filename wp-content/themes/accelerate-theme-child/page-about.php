@@ -21,15 +21,16 @@ get_header(); ?>
 	</section><!--about-page-header-->
 
 	<section class="about-list">
-		<div class-"about-content">
+		<div class="about-content">
 			<ul class="about-featured-services">
 				<?php while ( have_posts() ) : the_post(); ?>
 						<?php the_content();?>
 					<?php endwhile; //end of the loop ?>
-					<?php wp_resent_query(); //resets altered query to original ?>
 				</ul>
 			</div>
 		</section>
-
-
+		<div class="working-with-us">
+	<a class="button" href="<?php echo home_url(); ?>/blog">Contact Us</a>
+		<h6>Interested in working with us?</h6>
+</div>
 <?php get_footer(); ?>

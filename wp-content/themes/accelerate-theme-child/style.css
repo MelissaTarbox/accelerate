@@ -157,6 +157,51 @@
   text-align: center;
   margin-left: 25%;
 }
+
+/* services list styles */
+
+/* image border */
+.about-content img {
+  border-radius: 100%;
+  padding: 45px;
+  border: 5px solid #45ac9d;
+}
+
+/* service list */
+.about-featured-services ul li span.item {
+  font-size: 19px;
+  color: #2b2b2b;
+}
+
+.about-featured-services ul li {
+  list-style: none;
+  color: #909090;
+  font-size: 16px;
+}
+
+/* button section styles */
+
+.working-with-us {
+  border-top: 1px dotted #e3e1e1;
+	padding-top:12px;
+  margin-top:40px
+}
+
+
+.working-with-us a.button  {
+    background: none repeat scroll 0 0 #45ac9d;
+    float: right;
+    clear: left;
+    margin-right: 25%;
+    margin-bottom: 3%;
+}
+
+.working-with-us h6 {
+  display: inline-block;
+  margin-left: 35%;
+}
+
+
 /* Case Studies */
 
 article.case-study{
