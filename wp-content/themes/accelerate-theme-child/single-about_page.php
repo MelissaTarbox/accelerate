@@ -40,12 +40,12 @@ get_header(); ?>
 		<h6>Our Services:<?php echo $our_services; ?></h6>
 		<p><span class="grey-1">We take pride in our content and the content we create for them.<br> Here is a brief overview of our offered services.</span></p>
 
-			<figure class="service-image-align-left">
+			<figure class= "service-image-align-left">
 				<?php if($image_1){?>
 	      	<?php echo wp_get_attachment_image( $image_1, $size ); ?>
        	<?php	} ?>
-			</figure>
-			<div class= "service-description-left">
+   	</figure>
+		<div class= "service-description-left">
 				<h5><?php echo $service_1_title ?></h5>
 				<p><span class="grey"><?php echo $service_1_description?></span></p>
 			</div>
@@ -80,14 +80,14 @@ get_header(); ?>
 				<p><span class="grey"><?php echo $service_4_description; ?></span></p>
 			</div>
 
+			<div class="working-with-us">
+		<a class="button" href="<?php echo home_url(); ?>/blog">Contact Us</a>
+			<h6>Interested in working with us?</h6>
+			</div>
+
 	</section> <!-- our services-->
 </article><!-- services-->
 
 	<?php endwhile; // end of the loop. ?>
-
-		<div class="working-with-us">
-	<a class="button" href="<?php echo home_url(); ?>/blog">Contact Us</a>
-		<h6>Interested in working with us?</h6>
-    </div>
 
 <?php get_footer(); ?>

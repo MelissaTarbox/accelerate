@@ -110,16 +110,15 @@
 
 .social-media-menu li a {
   color: #fff;
-  background-color: #808080;
+  background-color: #2b2b2b;
   border-radius: 50%;
   text-align: center;
-  line-height: 20px;
   vertical-align: middle;
   padding: 8px;
 }
 
 /* About Page*/
-
+/* header image styles */
 .page-about-header {
   background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
   height: 240px;
@@ -142,6 +141,7 @@
   font-size: 25px;
 }
 
+/* page content styles */
 .our-services h6 {
   color:#2b2b2b;
   text-align: center;
@@ -166,9 +166,11 @@
 .our-services p, span.grey {
   color: #909090;
   font-size: 16px;
-  margin-bottom: 4%;
+  display: block;
 }
 
+/* services styles */
+/* image border styles*/
 .our-services .service-image-align-left {
   border-radius: 50%;
   border: 5px solid #45ac9d;
@@ -186,30 +188,38 @@
   margin-right: 5%;
 }
 
+/* service description styels */
+/*right float styless*/
 .our-services .service-description-right {
-  display: block;
-  text-align: left;
+  display: inline;
 
 }
-
-  .our-services .services-description-right, h5 {
-    display: block;
-    margin-right: 25%;
+  .our-services .service-description-right h5 {
+    text-align: left;
+    margin-left: 31%;
   }
+    .our-services .service-description-right p {
+      width: 48%;
+      text-align: left;
+      margin-left: 31%;
+    }
 
+/* left float styles */
 .our-services .service-description-left {
-  display: block;
-  text-align: right;
-}
-
-  .our-services .service-description-left, h5 {
-    display: block;
-    margin-left: 15%;
-  }
-
-.our-services, .service-description-right, .service-image-align-right {
   display: inline;
 }
+  .our-services .service-description-left h5 {
+    text-align: left;
+    margin-left: 22%;
+  }
+
+    .our-services .service-description-left p {
+      width: 48%;
+      text-align: left;
+      margin-left: 22%;
+
+    }
+
 
 /* button section styles */
 
@@ -223,14 +233,15 @@
 .working-with-us a.button  {
     background: none repeat scroll 0 0 #45ac9d;
     float: right;
-    clear: left;
-    margin-right: 25%;
-    margin-bottom: 3%;
+    margin-right: 28%;
+    margin-top: 8px;
+
 }
 
 .working-with-us h6 {
   display: inline-block;
-  margin-left: 35%;
+  margin-left: 28%;
+  text-transform: none;
 }
 
 
