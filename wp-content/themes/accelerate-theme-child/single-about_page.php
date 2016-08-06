@@ -21,54 +21,73 @@ get_header(); ?>
 				$size = "full";
 				$our_services = get_field('our_services');
 				$image_1 = get_field('image_1');
-				$content_strategy = get_field('content_strategy');
+				$service_1_title = get_field('content_strategy');
+				$service_1_description = get_field('content_strategy_description');
 				$image_2 = get_field('image_2');
-				$influencer_mapping = get_field('influencer_mapping');
+				$service_2_title = get_field('influencer_mapping');
+				$service_2_description = get_field('influencer_mapping_description');
 				$image_3 = get_field('image_3');
-				$social_media_strategy = get_field('social_media_strategy');
+				$service_3_title = get_field('social_media_strategy');
+				$service_3_description = get_field('social_media_strategy_description');
 				$image_4 = get_field('image_4');
-				$design_and_development = get_field('design_and_development'); ?>
-
-<article class="services">
-	<h6>Our Services:<?php echo $our_services; ?></h6>
-	<p><span class="grey-1">We take pride in our content and the content we create for them. Here is a brief overview of our offered services.</span></p>
-
-	<div class="our-services">
-
-				<?php if($image_1){?>
-	      	<?php echo wp_get_attachment_image( $image_1, $size ); ?>
-       	<?php	} ?>
-				<h5>Content Strategy: <?php echo $content_strategy; ?></h5>
-				<p><span class="grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non eleifend neque. Maecenas tempor sagittis velit sit amet auctor. Etiam dictum auctor tempor. Quisque vestibulum dui quis blandit pretium. Cras ac arcu augue. Etiam id nisl ac tellus dapibus malesuada eu in orci. Sed vulputate convallis nibh, eget.</span></p>
-
-				<?php if($image_2){?>
-					<?php echo wp_get_attachment_image( $image_2, $size ); ?>
-				<?php	} ?>
-				<h5>influencer Mapping: <?php echo $influencer_mapping; ?></h5>
-				<p><span class="grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non eleifend neque. Maecenas tempor sagittis velit sit amet auctor. Etiam dictum auctor tempor. Quisque vestibulum dui quis blandit pretium. Cras ac arcu augue. Etiam id nisl ac tellus dapibus malesuada eu in orci. Sed vulputate convallis nibh, eget.</span></p>
-
-				<?php if($image_3){?>
-					<?php echo wp_get_attachment_image( $image_3, $size ); ?>
-			  <?php	} ?>
-				<h5>Social Media Strategy: <?php echo $social_media_strategy; ?></h5>
-				<p><span class="grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non eleifend neque. Maecenas tempor sagittis velit sit amet auctor. Etiam dictum auctor tempor. Quisque vestibulum dui quis blandit pretium. Cras ac arcu augue. Etiam id nisl ac tellus dapibus malesuada eu in orci. Sed vulputate convallis nibh, eget.</span></p>
-
-				<?php if($image_4){?>
-					<?php echo wp_get_attachment_image( $image_4, $size ); ?>
-				<?php	} ?>
-				<h5>Design &amp; Development: <?php echo $design_and_development; ?></h5>
-				<p><span class="grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non eleifend neque. Maecenas tempor sagittis velit sit amet auctor. Etiam dictum auctor tempor. Quisque vestibulum dui quis blandit pretium. Cras ac arcu augue. Etiam id nisl ac tellus dapibus malesuada eu in orci. Sed vulputate convallis nibh, eget.</span></p>
+				$service_4_title = get_field('design_and_development');
+				$service_4_description = get_field('design_and_development__description'); ?>
 
 	<?php the_content(); ?>
 
-   </div>
-</article>
+<article class="services">
+	<section class="our-services">
+		<h6>Our Services:<?php echo $our_services; ?></h6>
+		<p><span class="grey-1">We take pride in our content and the content we create for them.<br> Here is a brief overview of our offered services.</span></p>
 
+			<figure class="service-image-align-left">
+				<?php if($image_1){?>
+	      	<?php echo wp_get_attachment_image( $image_1, $size ); ?>
+       	<?php	} ?>
+			</figure>
+			<div class= "service-description-left">
+				<h5><?php echo $service_1_title ?></h5>
+				<p><span class="grey"><?php echo $service_1_description?></span></p>
+			</div>
 
-			<?php endwhile; // end of the loop. ?>
+			<figure class="service-image-align-right">
+				<?php if($image_2){?>
+					<?php echo wp_get_attachment_image( $image_2, $size ); ?>
+				<?php	} ?>
+			</figure>
+			<div class="service-description-right">
+				<h5><?php echo $service_2_title; ?></h5>
+				<p><span class="grey"><?php echo $service_2_description;?></span></p>
+			</div>
+
+			<figure class="service-image-align-left">
+				<?php if($image_3){?>
+					<?php echo wp_get_attachment_image( $image_3, $size ); ?>
+			  <?php	} ?>
+			</figure>
+			<div class="service-description-left">
+				<h5><?php echo $service_3_title; ?></h5>
+				<p><span class="grey"><?php echo $service_3_description;?></span></p>
+    </div>
+
+			<figure class="service-image-align-right">
+				<?php if($image_4){?>
+					<?php echo wp_get_attachment_image( $image_4, $size ); ?>
+				<?php	} ?>
+			</figure>
+			<div class="service-description-right">
+				<h5><?php echo $service_4_title; ?></h5>
+				<p><span class="grey"><?php echo $service_4_description; ?></span></p>
+			</div>
+
+	</section> <!-- our services-->
+</article><!-- services-->
+
+	<?php endwhile; // end of the loop. ?>
 
 		<div class="working-with-us">
 	<a class="button" href="<?php echo home_url(); ?>/blog">Contact Us</a>
 		<h6>Interested in working with us?</h6>
-</div>
+    </div>
+
 <?php get_footer(); ?>

@@ -142,44 +142,74 @@
   font-size: 25px;
 }
 
-.services h6 {
+.our-services h6 {
   color:#2b2b2b;
-  width: 750px;
   text-align: center;
-  margin-left: 25%;
   text-transform: uppercase;
 }
 
-.services p .grey-1 {
+.our-services p, span.grey-1 {
   color: #909090;
-  width: 750px;
   text-align: center;
-  margin-left: 25%;
-  font-size: 16px;
-}
-
-.our-services {
-width: 750px;
+  font-size: 17px;
+  text-align: center;
+  margin-left: 13%;
+  display: block;
 }
 
 .our-services h5 {
   color:#2b2b2b;
   font-size: 20px;
   font-weight: normal;
-  float: right;
 }
 
-.our-services p .grey {
+.our-services p, span.grey {
   color: #909090;
   font-size: 16px;
+  margin-bottom: 4%;
 }
 
-.our-services img {
+.our-services .service-image-align-left {
   border-radius: 50%;
   border: 5px solid #45ac9d;
   padding: 3%;
+  float: left;
+  margin-left: 5%;
+
 }
 
+.our-services .service-image-align-right {
+  border-radius: 50%;
+  border: 5px solid #45ac9d;
+  padding: 3%;
+  float: right;
+  margin-right: 5%;
+}
+
+.our-services .service-description-right {
+  display: block;
+  text-align: left;
+
+}
+
+  .our-services .services-description-right, h5 {
+    display: block;
+    margin-right: 25%;
+  }
+
+.our-services .service-description-left {
+  display: block;
+  text-align: right;
+}
+
+  .our-services .service-description-left, h5 {
+    display: block;
+    margin-left: 15%;
+  }
+
+.our-services, .service-description-right, .service-image-align-right {
+  display: inline;
+}
 
 /* button section styles */
 
