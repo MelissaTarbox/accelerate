@@ -24,8 +24,10 @@
  * @subpackage Accelerate Marketing
  * @since Accelerate Marketing 1.0
  */
+//Costum post types function
 
  function create_custom_post_types() {
+   //create a case study custom post type
 
    // Reverse Case Studies Archive order
    function reverse_archive_order( $query ){
@@ -47,5 +49,22 @@
             'rewrite' => array( 'slug' => 'case-studies' ),
         )
     );
+
+    //create an about page custom post type
+    register_post_type( 'about_page',
+      array(
+        'labels' => array(
+          'name' => _('About Page'),
+          'singular_name' => _('About Page')
+        ),
+        'public' => true,
+        'has_archive' => false,
+        'rewrite' => array('slug' => 'page-about'),
+      )
+
+     );
+
 }
+//Hook this custom post type function into the theme
+
 add_action( 'init', 'create_custom_post_types' );

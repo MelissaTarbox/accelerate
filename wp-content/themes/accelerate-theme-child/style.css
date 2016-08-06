@@ -104,15 +104,13 @@
   float: left;
   margin-right: 5px;
   margin-left: 5px;
-  font-size: 10px;
+  font-size: 6px;
   list-style-type: none;
 }
 
 .social-media-menu li a {
   color: #fff;
   background-color: #808080;
-  width: 20px;
-  height: 20px;
   border-radius: 50%;
   text-align: center;
   line-height: 20px;
@@ -121,6 +119,7 @@
 }
 
 /* About Page*/
+
 .page-about-header {
   background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
   height: 240px;
@@ -143,41 +142,44 @@
   font-size: 25px;
 }
 
-.about-list h5 {
+.services h6 {
   color:#2b2b2b;
-  width: 550px;
+  width: 750px;
+  text-align: center;
+  margin-left: 25%;
   text-transform: uppercase;
-  text-align: center;
-  margin-left: 25%;
 }
 
-.about-list p {
+.services p .grey-1 {
   color: #909090;
-  width: 550px;
+  width: 750px;
   text-align: center;
   margin-left: 25%;
+  font-size: 16px;
 }
 
-/* services list styles */
-
-/* image border */
-.about-content img {
-  border-radius: 100%;
-  padding: 45px;
-  border: 5px solid #45ac9d;
+.our-services {
+width: 750px;
 }
 
-/* service list */
-.about-featured-services ul li span.item {
-  font-size: 19px;
-  color: #2b2b2b;
+.our-services h5 {
+  color:#2b2b2b;
+  font-size: 20px;
+  font-weight: normal;
+  float: right;
 }
 
-.about-featured-services ul li {
-  list-style: none;
+.our-services p .grey {
   color: #909090;
   font-size: 16px;
 }
+
+.our-services img {
+  border-radius: 50%;
+  border: 5px solid #45ac9d;
+  padding: 3%;
+}
+
 
 /* button section styles */
 
