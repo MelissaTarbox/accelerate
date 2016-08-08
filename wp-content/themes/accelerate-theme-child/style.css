@@ -130,9 +130,7 @@
   color: #fff;
   width: 550px;
   font-size: 25px;
-  float: center;
-  margin-left: 25%;
-  margin-top: 9%;
+  margin: 8% auto 0px;
   text-align: center;
 }
 
@@ -148,14 +146,16 @@
   text-transform: uppercase;
 }
 
-.our-services p, span.grey-1 {
+.our-services  span.grey-1 {
   color: #909090;
-  text-align: center;
   font-size: 17px;
   text-align: center;
-  margin-left: 13%;
   display: block;
+  margin-right: -18%;
+  margin-left: 33%;
 }
+
+/* service overview */
 
 .our-services h5 {
   color:#2b2b2b;
@@ -163,87 +163,68 @@
   font-weight: normal;
 }
 
-.our-services p, span.grey {
+.our-services span.grey {
   color: #909090;
   font-size: 16px;
   display: block;
 }
 
+.image-description {
+  overflow: hidden;
+  margin-top: 30px;
+}
+
 /* services styles */
-/* image border styles*/
-.our-services .service-image-align-left {
+
+.our-services img {
   border-radius: 50%;
   border: 5px solid #45ac9d;
-  padding: 3%;
-  float: left;
-  margin-left: 5%;
+  padding: 19%;
+}
 
+.our-services .service-image-align-left {
+  float: left;
+  width: 28%;
+  margin-right: 3%;
+  margin-top: 10%;
 }
 
 .our-services .service-image-align-right {
-  border-radius: 50%;
-  border: 5px solid #45ac9d;
-  padding: 3%;
   float: right;
-  margin-right: 5%;
+  width: 28%;
+  margin-left: 3%;
+  margin-top: 10%;
 }
 
-/* service description styels */
-/*right float styless*/
-.our-services .service-description-right {
-  display: inline;
-
+.our-services .service-description {
+  font-size: 16px;
+  float: left;
+  width: 69%;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
-  .our-services .service-description-right h5 {
-    text-align: left;
-    margin-left: 31%;
-  }
-    .our-services .service-description-right p {
-      width: 48%;
-      text-align: left;
-      margin-left: 31%;
-    }
-
-/* left float styles */
-.our-services .service-description-left {
-  display: inline;
-}
-  .our-services .service-description-left h5 {
-    text-align: left;
-    margin-left: 22%;
-  }
-
-    .our-services .service-description-left p {
-      width: 48%;
-      text-align: left;
-      margin-left: 22%;
-
-    }
-
 
 /* button section styles */
 
 .working-with-us {
+  clear: both;
   border-top: 1px dotted #e3e1e1;
-	padding-top:12px;
-  margin-top:40px
+  padding-top: 12px;
+  margin-top: 40px;
+  text-align:center;
 }
 
-
-.working-with-us a.button  {
-    background: none repeat scroll 0 0 #45ac9d;
-    float: right;
-    margin-right: 28%;
-    margin-top: 8px;
-
+.working-with-us a.button {
+  background: none repeat scroll 0 0 #45ac9d;
+  display: inline-block;
+  margin-top: 8px;
 }
 
 .working-with-us h6 {
   display: inline-block;
-  margin-left: 28%;
+  margin-right: 5%;
   text-transform: none;
 }
-
 
 /* Case Studies */
 

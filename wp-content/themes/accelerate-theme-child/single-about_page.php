@@ -34,57 +34,66 @@ get_header(); ?>
 				$service_4_description = get_field('design_and_development__description'); ?>
 
 	<?php the_content(); ?>
-
+<div class="site-content">
 <article class="services">
 	<section class="our-services">
 		<h6>Our Services:<?php echo $our_services; ?></h6>
-		<p><span class="grey-1">We take pride in our content and the content we create for them.<br> Here is a brief overview of our offered services.</span></p>
+		<p><span class="grey-1">We take pride in our content and the content we create for them. Here is a brief overview of our offered services.</span></p>
 
+<section class="image-description">
 			<figure class= "service-image-align-left">
 				<?php if($image_1){?>
 	      	<?php echo wp_get_attachment_image( $image_1, $size ); ?>
        	<?php	} ?>
    	</figure>
-		<div class= "service-description-left">
+		<div class= "service-description">
 				<h5><?php echo $service_1_title ?></h5>
 				<p><span class="grey"><?php echo $service_1_description?></span></p>
 			</div>
+		</section>
 
+<section class="image-description">
 			<figure class="service-image-align-right">
 				<?php if($image_2){?>
 					<?php echo wp_get_attachment_image( $image_2, $size ); ?>
 				<?php	} ?>
 			</figure>
-			<div class="service-description-right">
+			<div class="service-description">
 				<h5><?php echo $service_2_title; ?></h5>
 				<p><span class="grey"><?php echo $service_2_description;?></span></p>
 			</div>
+		</section>
 
+<section class="image-description">
 			<figure class="service-image-align-left">
 				<?php if($image_3){?>
 					<?php echo wp_get_attachment_image( $image_3, $size ); ?>
 			  <?php	} ?>
 			</figure>
-			<div class="service-description-left">
+			<div class="service-description">
 				<h5><?php echo $service_3_title; ?></h5>
 				<p><span class="grey"><?php echo $service_3_description;?></span></p>
     </div>
+	</section>
 
+<section class="image-description">
 			<figure class="service-image-align-right">
 				<?php if($image_4){?>
 					<?php echo wp_get_attachment_image( $image_4, $size ); ?>
 				<?php	} ?>
 			</figure>
-			<div class="service-description-right">
+			<div class="service-description">
 				<h5><?php echo $service_4_title; ?></h5>
 				<p><span class="grey"><?php echo $service_4_description; ?></span></p>
 			</div>
+		</section>
 
 			<div class="working-with-us">
-		<a class="button" href="<?php echo home_url(); ?>/blog">Contact Us</a>
 			<h6>Interested in working with us?</h6>
+			<a class="button" href="<?php echo home_url(); ?>/blog">Contact Us</a>
 			</div>
 
+      </div>
 	</section> <!-- our services-->
 </article><!-- services-->
 
