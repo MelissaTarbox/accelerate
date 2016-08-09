@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying 404 page
+ * The template for displaying the 404 page
  *
  * @package WordPress
  * @subpackage Accelerate Marketing
@@ -9,13 +9,16 @@
 
 get_header(); ?>
 
-	<div id="primary" class="site-content">
-		<div id="content" role="main">
-			<?php while ( have_posts() ) : the_post(); ?>
-				<?php the_content(); ?>
-			<?php endwhile; // end of the loop. ?>
-
-		</div><!-- #content -->
-	</div><!-- #primary -->
+<section class="error-page">
+	<div class="error-page-content">
+		<h2>Oops!</h2>
+		<h6>We can't find that!</h6>
+		<a class="button" href="<?php echo home_url(); ?>/blog">Home</a>
+	</div><!--404-content-->
+	<div class="error-page-image">
+	</div>
+		<?php while ( have_posts() ) : the_post(); ?>
+		<?php endwhile; // end of the loop. ?>
+</section><!-- .404-page -->
 
 <?php get_footer(); ?>
