@@ -63,19 +63,21 @@ get_header(); ?>
 	</div>
 </section><!--the blog post section-->
 
-<section class= "twitter-feed">
+<section class= "tweet-feed">
 	<div class="site-content">
-		<div class="twitter">
+		<div class="tweet">
 
 <?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
 <div id="secondary" class="widget-area" role="complementary">
 	<?php dynamic_sidebar( 'sidebar-2' ); ?>
+	<h2>@Accelerate</h2>
 	<a href="<?php the_permalink(); ?>" class="read-more-link"><span>Read More &rsaquo;</span></a>
 </div>
 
      </div><!--twitter-->
    </div><!--site content-->
 </section><!--twitter-->
+
 <?php endif; ?>
 
 <?php get_footer(); ?>

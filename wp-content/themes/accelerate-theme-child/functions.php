@@ -79,6 +79,7 @@ add_action( 'init', 'create_custom_post_types' );
      	    'after_widget' => '</aside>',
      	    'before_title' => '<h3 class="widget-title">',
      	    'after_title' => '</h3>',
+          
      	) );
 
      }
