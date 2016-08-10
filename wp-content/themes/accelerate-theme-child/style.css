@@ -98,6 +98,28 @@
   width: 31%;
 }
 
+/* Twitter Module On Homepage */
+
+.twitter {
+  width: 50%;
+  float: right;
+  clear: left;
+}
+
+.twitter h3 {
+  font-size: 16px;
+	font-family: 'Montserrat';
+	color: #a6a6a6;
+	text-transform: uppercase;
+}
+
+.twitter .read-more-link {
+  font: 700 15px 'Montserrat';
+  color: #45ac9d;
+  text-transform: uppercase;
+  margin-top: 7%;
+}
+
 /* Footer Styles */
 
 .social-media-menu li {
