@@ -285,9 +285,11 @@ aside.case-study-sidebar p {
 /* 404 Page Styles */
 
 .error-page .error-page-content h2 {
+  color: #2f6a61;
+  font-size: 45px;
   font-style: italic;
   float: right;
-  margin-right: 22%;
+  margin-right: 20%;
 }
 
 .error-page .error-page-content h6 {
@@ -295,14 +297,22 @@ aside.case-study-sidebar p {
   font-weight: lighter;
   float: right;
   clear: right;
-  margin-right: 15%;
+  margin-right: 18%;
 }
 .error-page .error-page-content a.button{
   float: right;
   clear: right;
-  margin-right: 15%;
+  margin-right: 18%;
   margin-top: 3%;
   margin-bottom: 3%;
+}
+
+.error-page .error-page-image {
+  background: url("img/dog.jpg") no-repeat;
+  height: 300px;
+  margin-bottom: 2%;
+  margin-top: 5%;
+  margin-left: 15%;
 }
 
 /* Contact Us Page */
