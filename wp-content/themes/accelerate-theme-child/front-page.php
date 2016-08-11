@@ -49,8 +49,9 @@ get_header(); ?>
 </section>
 
 <section class="recent-posts">
+
 	<div class="site-content">
-		<div class="blog-post">
+		<span class="blog-post">
 			<h4>From the Blog</h4>
 			<?php query_posts('posts_per_page=1'); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -58,19 +59,19 @@ get_header(); ?>
 				<?php the_excerpt(); ?>
 				<a href="<?php the_permalink(); ?>" class="read-more-link"><span>Read More &rsaquo;</span></a>
 	<?php endwhile; // end of the loop. ?>
-
-		<div class="tweet">
+</span>
+		<span class="tweet">
 	<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
 		<div id="secondary" class="widget-area" role="complementary">
 	<?php dynamic_sidebar( 'sidebar-2' ); ?>
 		<h2>@Accelerate</h2>
 			<a href="<?php the_permalink(); ?>" class="read-more-link"><span>Follow Us &rsaquo;</span></a>
 		</div>
- </div><!--tweet-->
+ </span><!--tweet-->
 	<?php endif; ?>
 
-		</div><!--blog post-->
- 	</div><!--site content-->
+	</div><!--site content-->
+
 </section><!--posts-->
 
 <?php get_footer(); ?>
