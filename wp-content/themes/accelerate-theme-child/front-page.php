@@ -64,7 +64,6 @@ get_header(); ?>
 	<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
 		<div id="secondary" class="widget-area" role="complementary">
 	<?php dynamic_sidebar( 'sidebar-2' ); ?>
-		<h2>@Accelerate</h2>
 			<a href="<?php the_permalink(); ?>" class="read-more-link"><span>Follow Us &rsaquo;</span></a>
 		</div>
  </span><!--tweet-->
